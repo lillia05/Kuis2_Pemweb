@@ -12,6 +12,7 @@ if (isset($_POST['login'])) {
 
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user'] = $user['username'];
+        $_SESSION['welcome_message'] = "Selamat datang, " . $user['username'] . "!";
         header("Location: index.php");
         exit();
     } else {
