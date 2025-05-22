@@ -41,7 +41,7 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM users WHERE id=$id
             <input type="file" name="foto" class="form-control" accept="image/*">
         </div>
         <button type="submit" name="update" class="btn btn-warning">Update</button>
-        <a href="data_akun.php" class="btn btn-secondary">Kembali</a>
+        <a href="index.php" class="btn btn-secondary">Kembali</a>
     </form>
 
     <?php
