@@ -9,13 +9,13 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="container mt-5">
-    <h2>Data Akun</h2>
+    <h2>Dashboard</h2>
     
     <?php if (isset($_SESSION['welcome_message'])): ?>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             <?php 
             echo $_SESSION['welcome_message'];
-            unset($_SESSION['welcome_message']); // Hapus pesan setelah ditampilkan
+            unset($_SESSION['welcome_message']); 
             ?>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
@@ -58,5 +58,7 @@ session_start();
         <a href="login.php" class="btn btn-primary">Login</a>
         <a href="logout.php" class="btn btn-danger">Logout</a>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
